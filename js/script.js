@@ -38,7 +38,7 @@ const feeders = [
         name: "AirNav RadarBox", 
         url: "https://www.airnavradar.com/stations/EXTRPI657061", 
         icon: "bi-box-seam"
-    }
+    },
     { 
         name: "Plane Finder", 
         url: "https://planefinder.acertenoalvo.com/", 
