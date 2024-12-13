@@ -7,7 +7,7 @@ const feeders = [
     { 
         name: "Ultrafeeder - Heatmap", 
         url: "http://ultrafeeder.acertenoalvo.com/?heatmap", 
-        icon: "activity"
+        icon: "bi-activity"
     },
     { 
         name: "Ultrafeeder - Tracks", 
