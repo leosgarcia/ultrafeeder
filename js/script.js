@@ -90,12 +90,14 @@ document.addEventListener('DOMContentLoaded', () => {
     // Renderiza todos os feeders inicialmente
     renderFeeders(feeders);
 
-      // Verifica a preferência do usuário no localStorage
-      const isDarkMode = localStorage.getItem("dark-mode") === "enabled";
+    // Verifica a preferência do usuário no localStorage
+    const isDarkMode = localStorage.getItem("dark-mode") === "enabled";
 
-      if (isDarkMode) {
+    if (isDarkMode) {
         document.body.classList.add("dark-mode");
-      }
+        darkModeToggle.querySelector(".bi-sun").style.display = "inline-block";
+        darkModeToggle.querySelector(".bi-moon-stars").style.display = "none";
+    }
 
     darkModeToggle.addEventListener("click", () => {
         document.body.classList.toggle("dark-mode");
@@ -106,5 +108,11 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             localStorage.setItem("dark-mode", "disabled");
         }
+
+        // Alterna a visibilidade dos ícones
+        const sunIcon = darkModeToggle.querySelector(".bi-sun");
+        const moonIcon = darkModeToggle.querySelector(".bi-moon-stars");
+        sunIcon.style.display = document.body.classList.contains("dark-mode") ? "inline-block" : "none";
+        moonIcon.style.display = document.body.classList.contains("dark-mode") ? "none" : "inline-block";
     });
 });
