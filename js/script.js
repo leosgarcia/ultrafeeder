@@ -12,12 +12,12 @@ const feeders = [
     { 
         name: "Ultrafeeder - Tracks", 
         url: "http://ultrafeeder.acertenoalvo.com/?pTracks", 
-        icon: "clock-history"
+        icon: "bi-clock-history"
     },
     { 
         name: "Ultrafeeder - Graphs", 
         url: "http://ultrafeeder.acertenoalvo.com/graphs1090/", 
-        icon: "bar-chart"
+        icon: "bi-bar-chart"
     },
     { 
         name: "PlaneFinder", 
