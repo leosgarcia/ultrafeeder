@@ -43,6 +43,16 @@ const feeders = [
         name: "Plane Finder", 
         url: "https://planefinder.acertenoalvo.com/", 
         icon: "bi-search"
+    }, 
+    { 
+        name: "ADSBHub", 
+        url: "https://www.adsbhub.org/statistic.php", 
+        icon: "bi-globe-americas"
+    },
+    { 
+        name: "OpenSky Network", 
+        url: "https://opensky-network.org/receiver-profile?s=-1408199258", 
+        icon: "bi-moon-stars"
     }
 ];
 
