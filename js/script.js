@@ -32,12 +32,17 @@ const feeders = [
     { 
         name: "FlightRadar24", 
         url: "https://fr24.acertenoalvo.com/", 
-        icon: "bi-radar"
+        icon: "bi-bullseye"
     },
     { 
         name: "AirNav RadarBox", 
         url: "https://www.airnavradar.com/stations/EXTRPI657061", 
         icon: "bi-box-seam"
+    }
+    { 
+        name: "Plane Finder", 
+        url: "https://planefinder.acertenoalvo.com/", 
+        icon: "bi-search"
     }
 ];
 
