@@ -16,6 +16,7 @@ body {
     background-color: var(--bg-light);
     color: var(--text-dark);
     line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Adiciona transição suave */
 }
 
 .container {
@@ -91,4 +92,19 @@ header h1 {
 
 .feeder-card a:hover {
     color: var(--color-secondary);
+}
+
+/* Estilos para o dark mode */
+body.dark-mode {
+    --color-primary: #f39c12;  /* Cor primária no dark mode */
+    --color-secondary: #27ae60; /* Cor secundária no dark mode */
+    --bg-light: #222;          /* Cor de fundo escura */
+    --text-dark: #f5f5f5;     /* Cor do texto clara */
+
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+}
+
+body.dark-mode .feeder-card {
+    background-color: #333; /* Cor de fundo dos cards no dark mode */
 }

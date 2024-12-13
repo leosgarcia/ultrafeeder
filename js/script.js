@@ -56,35 +56,55 @@ const feeders = [
     }
 ];
 
-const feedersList = document.getElementById("feeders-list");
-const searchInput = document.getElementById("search-input");
+document.addEventListener('DOMContentLoaded', () => {
+    const feedersList = document.getElementById("feeders-list");
+    const searchInput = document.getElementById("search-input");
+    const darkModeToggle = document.getElementById("dark-mode-toggle");
 
-function renderFeeders(feedersToRender) {
-    feedersList.innerHTML = "";
+    function renderFeeders(feedersToRender) {
+        feedersList.innerHTML = "";
+        feedersToRender.forEach(feeder => {
+            const card = document.createElement("div");
+            card.classList.add("feeder-card");
+            
+            card.innerHTML = `
+                <div class="card-icon">
+                    <i class="bi ${feeder.icon}"></i>
+                </div>
+                <h3>${feeder.name}</h3>
+                <a href="${feeder.url}" target="_blank">Visitar Site</a>
+            `;
 
-    feedersToRender.forEach(feeder => {
-        const card = document.createElement("div");
-        card.classList.add("feeder-card");
-        
-        card.innerHTML = `
-            <div class="card-icon">
-                <i class="bi ${feeder.icon}"></i>
-            </div>
-            <h3>${feeder.name}</h3>
-            <a href="${feeder.url}" target="_blank">Visitar Site</a>
-        `;
+            feedersList.appendChild(card);
+        });
+    }
 
-        feedersList.appendChild(card);
+    searchInput.addEventListener("input", () => {
+        const searchTerm = searchInput.value.toLowerCase();
+        const filteredFeeders = feeders.filter(feeder => 
+            feeder.name.toLowerCase().includes(searchTerm)
+        );
+        renderFeeders(filteredFeeders);
     });
-}
 
-searchInput.addEventListener("input", () => {
-    const searchTerm = searchInput.value.toLowerCase();
-    const filteredFeeders = feeders.filter(feeder => 
-        feeder.name.toLowerCase().includes(searchTerm)
-    );
-    renderFeeders(filteredFeeders);
+    // Renderiza todos os feeders inicialmente
+    renderFeeders(feeders);
+
+      // Verifica a preferência do usuário no localStorage
+      const isDarkMode = localStorage.getItem("dark-mode") === "enabled";
+
+      if (isDarkMode) {
+        document.body.classList.add("dark-mode");
+      }
+
+    darkModeToggle.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+
+        // Salva a preferência do usuário no localStorage
+        if (document.body.classList.contains("dark-mode")) {
+            localStorage.setItem("dark-mode", "enabled");
+        } else {
+            localStorage.setItem("dark-mode", "disabled");
+        }
+    });
 });
-
-// Renderiza todos os feeders inicialmente
-renderFeeders(feeders);
