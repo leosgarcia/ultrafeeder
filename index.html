@@ -3,37 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ADS-B Feeders - Leonardo Garcias</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>ADS-B Feeders Tracker</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <div class="header-content">
-                <h1>🛩️ Meus ADS-B Feeders</h1>
-                <p>Uma coleção de recursos para rastreamento de aeronaves</p>
+    <div class="app-container">
+        <div class="sidebar">
+            <div class="logo">
+                <i class="bi bi-airplane-fill"></i>
+                <h2>Feeder Hub</h2>
             </div>
-        </header>
-
-        <main>
-            <section class="feeders">
+            <nav>
+                <ul>
+                    <li class="active"><a href="#"><i class="bi bi-grid-fill"></i> Meus Feeders</a></li>
+                    <li><a href="#"><i class="bi bi-globe2"></i> Mapa Global</a></li>
+                    <li><a href="#"><i class="bi bi-bar-chart-fill"></i> Estatísticas</a></li>
+                    <li><a href="#"><i class="bi bi-gear-fill"></i> Configurações</a></li>
+                </ul>
+            </nav>
+        </div>
+        <main class="main-content">
+            <header>
                 <div class="search-container">
-                    <input type="text" id="search-input" placeholder="Buscar feeder...">
+                    <i class="bi bi-search"></i>
+                    <input type="text" id="search-input" placeholder="Buscar feeders ADS-B...">
                 </div>
-                <ul id="feeders-list"></ul>
+                <div class="user-profile">
+                    <img src="/api/placeholder/40/40" alt="Perfil" class="profile-pic">
+                    <span>Leonardo Garcias</span>
+                </div>
+            </header>
+
+            <section class="feeders-section">
+                <div class="section-header">
+                    <h1>Meus Feeders ADS-B</h1>
+                    <div class="action-buttons">
+                        <button class="btn-primary">
+                            <i class="bi bi-plus-circle"></i> Adicionar Feeder
+                        </button>
+                    </div>
+                </div>
+
+                <div class="feeders-grid" id="feeders-list"></div>
             </section>
         </main>
-
-        <footer>
-            <div class="footer-content">
-                <p>&copy; 2024 Leonardo Garcias - Todos os direitos reservados</p>
-                <div class="social-links">
-                    <a href="#" target="_blank"><i class="bi bi-github"></i></a>
-                    <a href="#" target="_blank"><i class="bi bi-linkedin"></i></a>
-                </div>
-            </div>
-        </footer>
     </div>
 
     <script src="js/script.js"></script>
