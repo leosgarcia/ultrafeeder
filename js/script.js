@@ -37,7 +37,7 @@ const feeders = [
     { 
         name: "AirNav RadarBox", 
         url: "https://www.airnavradar.com/stations/EXTRPI657061", 
-        icon: "box-seam"
+        icon: "bi-box-seam"
     }
 ];
 
