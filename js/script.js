@@ -20,24 +20,24 @@ const feeders = [
         icon: "bi-bar-chart"
     },
     { 
-        name: "PlaneFinder", 
-        url: "https://planefinder.net/", 
-        icon: "bi-search"
+        name: "Plane.watch", 
+        url: "https://atc.plane.watch/", 
+        icon: "bi-stopwatch"
     },
     { 
-        name: "ADSBHub", 
-        url: "https://www.adsbhub.org/", 
-        icon: "bi-cloud"
+        name: "FlightAware", 
+        url: "https://piaware.acertenoalvo.com/", 
+        icon: "bi-airplane-engines"
     },
     { 
-        name: "OpenSky Network", 
-        url: "https://opensky-network.org/", 
-        icon: "bi-view-list"
+        name: "FlightRadar24", 
+        url: "https://fr24.acertenoalvo.com/", 
+        icon: "bi-radar"
     },
     { 
-        name: "RadarVirtuel", 
-        url: "https://www.radarvirtuel.com/", 
-        icon: "bi-globe"
+        name: "AirNav RadarBox", 
+        url: "https://www.airnavradar.com/stations/EXTRPI657061", 
+        icon: "box-seam"
     }
 ];
 
