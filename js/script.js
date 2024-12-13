@@ -1,23 +1,23 @@
 const feeders = [
     { 
-        name: "Ultrafeeder", 
+        name: "Ultrafeeder - Main", 
         url: "http://ultrafeeder.acertenoalvo.com/", 
         icon: "bi-airplane"
     },
     { 
         name: "Ultrafeeder - Heatmap", 
         url: "http://ultrafeeder.acertenoalvo.com/?heatmap", 
-        icon: "bi-airplane"
+        icon: "activity"
     },
     { 
-        name: "FlightRadar24", 
-        url: "https://www.flightradar24.com/", 
-        icon: "bi-geo-alt"
+        name: "Ultrafeeder - Tracks", 
+        url: "http://ultrafeeder.acertenoalvo.com/?pTracks", 
+        icon: "clock-history"
     },
     { 
-        name: "RadarBox", 
-        url: "https://www.radarbox.com/", 
-        icon: "bi-compass"
+        name: "Ultrafeeder - Graphs", 
+        url: "http://ultrafeeder.acertenoalvo.com/graphs1090/", 
+        icon: "bar-chart"
     },
     { 
         name: "PlaneFinder", 
