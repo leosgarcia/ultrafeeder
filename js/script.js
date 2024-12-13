@@ -1,12 +1,12 @@
 const feeders = [
     { 
-        name: "Plane.watch", 
-        url: "https://www.plane.watch/", 
-        icon: "bi-broadcast"
+        name: "Ultrafeeder", 
+        url: "http://ultrafeeder.acertenoalvo.com/", 
+        icon: "bi-airplane"
     },
     { 
-        name: "FlightAware", 
-        url: "https://flightaware.com/", 
+        name: "Ultrafeeder - Heatmap", 
+        url: "http://ultrafeeder.acertenoalvo.com/?heatmap", 
         icon: "bi-airplane"
     },
     { 
