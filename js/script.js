@@ -20,9 +20,9 @@ const feeders = [
         icon: "bi-bar-chart"
     },
     { 
-        name: "Plane.watch", 
-        url: "https://atc.plane.watch/", 
-        icon: "bi-stopwatch"
+        name: "ADS-B Exchange", 
+        url: "https://globe.adsbexchange.com/?feed=9m-eai3-UJeh", 
+        icon: "bi bi-broadcast-pin"
     },
     { 
         name: "FlightAware", 
@@ -53,6 +53,11 @@ const feeders = [
         name: "OpenSky Network", 
         url: "https://opensky-network.org/receiver-profile?s=-1408199258", 
         icon: "bi-moon-stars"
+    },
+    { 
+        name: "Plane.watch", 
+        url: "https://atc.plane.watch/", 
+        icon: "bi-stopwatch"
     }
 ];
 
