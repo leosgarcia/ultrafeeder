@@ -1,17 +1,34 @@
-# Guia de Contribuição
+# Guia de ContribuiÃ§Ã£o
 
-Obrigado por se interessar em contribuir para este projeto! Aceitamos contribuições de todos os tamanhos, desde correções de bugs até novas funcionalidades.
+Obrigado por se interessar em contribuir para o **ADS-B Feeders Portal**! Aceitamos contribuiÃ§Ãµes de todos os tamanhos, desde correÃ§Ãµes de bugs, sugestÃµes de novos feeds/estaÃ§Ãµes atÃ© melhorias visuais e de acessibilidade.
 
-## Como contribuir
+---
 
-1. Faça um Fork deste repositório.
-2. Crie uma branch para sua alteração: `git checkout -b minha-alteracao`
-3. Commit suas alterações: `git commit -m 'feat: adiciona nova alteração'`
-4. Faça o push para a sua branch: `git push origin minha-alteracao`
-5. Abra um Pull Request no repositório original descrevendo as mudanças.
+## Como Contribuir
 
-## Padrão de Commits
+1. **FaÃ§a um Fork** deste repositÃ³rio.
+2. **Crie uma branch** para sua alteraÃ§Ã£o:
+   ```bash
+   git checkout -b feature/minha-melhoria
+   ```
+3. **FaÃ§a suas alteraÃ§Ãµes e teste localmente** (ex: abrindo `index.html` ou usando `python3 -m http.server 8080`).
+4. **Commit suas alteraÃ§Ãµes** com mensagens descritivas:
+   ```bash
+   git commit -m 'feat: adiciona nova estacao ADS-B'
+   ```
+5. **Envie para a sua branch remota**:
+   ```bash
+   git push origin feature/minha-melhoria
+   ```
+6. **Abra um Pull Request** no repositÃ³rio principal descrevendo as mudanÃ§as realizadas.
 
-Recomendamos seguir o [Conventional Commits](https://www.conventionalcommits.org/).
+---
 
-Qualquer dúvida, sinta-se livre para abrir uma Issue!
+## PadrÃµes de CÃ³digo
+
+- Mantenha o cÃ³digo limpo, sem dependÃªncias externas de build (HTML/CSS/JS nativo).
+- Utilize nomes semÃ¢nticos para classes e variÃ¡veis no CSS (`style.css`).
+- Verifique a responsividade em telas mobile e o suporte a temas Claro e Escuro.
+- Recomendamos seguir o padrÃ£o [Conventional Commits](https://www.conventionalcommits.org/).
+
+Qualquer dÃºvida ou sugestÃ£o, sinta-se livre para abrir uma [Issue no GitHub](https://github.com/leosgarcia/ultrafeeder/issues)!
