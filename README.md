@@ -34,7 +34,7 @@ O **ADS-B Feeders Portal** é uma interface web moderna, leve e responsiva criad
 | **Estação Local** | **Ultrafeeder (Main)** | Mapa principal de aeronaves locais via `tar1090` |
 | **Estação Local** | **Ultrafeeder (Heatmap)** | Mapa de calor com densidade de tráfego |
 | **Estação Local** | **Ultrafeeder (Tracks)** | Histórico persistente de rotas detectadas |
-| **Métricas** | **Ultrafeeder (Graphs)** | Estatísticas do receptor via `graphs1090` |
+| **Métricas** | **Ultrafeeder (Telemetria)** | Painel em português para os dados do `graphs1090` |
 | **Redes Globais** | **ADS-B Exchange** | Cobertura enviada ao feed aberto ADS-B Exchange |
 | **Redes Globais** | **FlightAware** | Status e telemetria no FlightAware PiAware |
 | **Redes Globais** | **FlightRadar24** | Status de alimentação no FR24 |

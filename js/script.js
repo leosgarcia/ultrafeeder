@@ -30,10 +30,10 @@ const feeders = [
     },
     {
         id: "ultrafeeder-graphs",
-        name: "Ultrafeeder - Graphs",
+        name: "Ultrafeeder - Telemetria",
         category: "analytics",
-        description: "Métricas de desempenho do receptor, ruído, alcance e mensagens por segundo (graphs1090).",
-        url: "http://ultrafeeder.acertenoalvo.com/graphs1090/",
+        description: "Painel em português com sinal, alcance, tráfego e saúde do servidor.",
+        url: "https://sv.acertenoalvo.com/metrics.html",
         icon: "bi-bar-chart-line-fill"
     },
     {
