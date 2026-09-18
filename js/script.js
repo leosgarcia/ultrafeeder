@@ -69,6 +69,14 @@ const feeders = [
         icon: "bi-box-seam-fill"
     },
     {
+        id: "radarvirtuel",
+        name: "RadarVirtuel",
+        category: "global",
+        description: "Cobertura, tráfego recebido e MLAT da estação SBFZ1 em Fortaleza.",
+        url: "https://radarvirtuel.com/station/SBFZ1",
+        icon: "bi-radar"
+    },
+    {
         id: "plane-finder",
         name: "Plane Finder",
         category: "global",

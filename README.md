@@ -39,6 +39,7 @@ O **ADS-B Feeders Portal** é uma interface web moderna, leve e responsiva criad
 | **Redes Globais** | **FlightAware** | Status e telemetria no FlightAware PiAware |
 | **Redes Globais** | **FlightRadar24** | Status de alimentação no FR24 |
 | **Redes Globais** | **AirNav RadarBox** | Painel da estação no ecossistema RadarBox |
+| **Redes Globais** | **RadarVirtuel** | Cobertura, tráfego e MLAT da estação SBFZ1 |
 | **Redes Globais** | **Plane Finder** | Feed de envio para Plane Finder |
 | **Redes Globais** | **OpenSky Network** | Perfil acadêmico e contribuições OpenSky |
 | **Métricas** | **ADSBHub** | Estatísticas de agregação e roteamento |
